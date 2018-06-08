@@ -254,7 +254,7 @@ body {
 }
 @media only screen and (min-width: 300px) {
   .cta__container > * {
-    margin-top: 36px;
+    margin-top: 28px;
   }
 }
 .cta__img-side {
@@ -265,7 +265,7 @@ body {
 }
 @media only screen and (min-width: 300px) {
   .cta__info-side > * {
-    margin-top: 36px;
+    margin-top: 28px;
   }
 }
 .cta__topic {
