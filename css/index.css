@@ -179,6 +179,30 @@ html {
 body {
   font-size: 1.6rem;
 }
+.jumbotron .jumbotron__all-text {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 24px;
+}
+.jumbotron .jumbotron__text {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.jumbotron .jumbotron__text:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 480px) {
+  .jumbotron-main {
+    position: relative;
+    z-index: -1;
+    background-image: url('../../img/home/home-mobile-jumbotron.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 320px;
+  }
+}
 .container--md {
   max-width: 960px;
   padding: 0 20px;

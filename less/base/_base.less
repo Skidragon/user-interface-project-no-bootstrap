@@ -12,6 +12,34 @@
   body {
     font-size: 1.6rem;
   }
+  .jumbotron {
+      .jumbotron__all-text {
+        //Based off of .jumbotron-main positioning
+          position: absolute;
+          bottom: 0;
+          margin-bottom: 24px;
+      }
+      .jumbotron__text {
+          font-size: 3rem;
+          color: @brand-color-white;
+          margin-bottom: 12px;
+          &:last-child {
+              margin-bottom: 0;
+          }
+      }
+  }
+
+  .jumbotron-main {
+      @media @phone {
+          position: relative;
+          z-index: -1;
+          background-image: url('../../img/home/home-mobile-jumbotron.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          height: 320px;
+      }
+  }
 
   .container {
       &--md {
