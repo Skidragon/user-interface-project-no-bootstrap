@@ -242,6 +242,7 @@ body {
 .nav-main {
   position: fixed;
   width: 100%;
+  z-index: 5;
 }
 .nav-main__start {
   display: flex;
@@ -333,4 +334,7 @@ body {
 }
 .projects__text:first-child {
   margin: 124px 0 28px 0;
+}
+.projects__text:last-child {
+  margin-bottom: 60px;
 }
