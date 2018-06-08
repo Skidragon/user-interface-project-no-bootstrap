@@ -1,4 +1,19 @@
 @charset 'UTF-8';
+.white-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111111;
+  text-decoration: none;
+  font-weight: 500;
+  height: 50px;
+  border: 1px #111111 solid;
+}
+@media only screen and (min-width: 300px) {
+  .white-btn {
+    width: 100%;
+  }
+}
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -178,6 +193,7 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: sans-serif, Arial, Helvetica;
 }
 .jumbotron .jumbotron__all-text {
   position: absolute;
@@ -185,14 +201,15 @@ body {
   margin-bottom: 24px;
 }
 .jumbotron .jumbotron__text {
-  font-size: 3rem;
+  font-size: 3.4rem;
+  font-weight: 600;
   color: #fff;
   margin-bottom: 12px;
 }
 .jumbotron .jumbotron__text:last-child {
   margin-bottom: 0;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 300px) {
   .jumbotron-main {
     position: relative;
     z-index: -1;
@@ -205,7 +222,7 @@ body {
 }
 .container--md {
   max-width: 960px;
-  padding: 0 20px;
+  padding: 0 6.66666667%;
 }
 .container--center {
   margin: 0 auto;
@@ -231,4 +248,45 @@ body {
 }
 .nav-main__overlay {
   display: none;
+}
+.cta__container {
+  margin-top: 48px;
+}
+@media only screen and (min-width: 300px) {
+  .cta__container > * {
+    margin-top: 36px;
+  }
+}
+.cta__img-side {
+  width: 100%;
+}
+.cta__img-side > * {
+  width: 100%;
+}
+@media only screen and (min-width: 300px) {
+  .cta__info-side > * {
+    margin-top: 36px;
+  }
+}
+.cta__topic {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.cta__text {
+  line-height: 2.4rem;
+}
+.cta__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111111;
+  text-decoration: none;
+  font-weight: 500;
+  height: 50px;
+  border: 1px #111111 solid;
+}
+@media only screen and (min-width: 300px) {
+  .cta__btn {
+    width: 100%;
+  }
 }

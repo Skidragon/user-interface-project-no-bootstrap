@@ -11,6 +11,7 @@
   
   body {
     font-size: 1.6rem;
+    font-family: sans-serif, Arial, Helvetica;
   }
   .jumbotron {
       .jumbotron__all-text {
@@ -20,7 +21,8 @@
           margin-bottom: 24px;
       }
       .jumbotron__text {
-          font-size: 3rem;
+          font-size: 3.4rem;
+          font-weight: 600;
           color: @brand-color-white;
           margin-bottom: 12px;
           &:last-child {
@@ -44,7 +46,7 @@
   .container {
       &--md {
           max-width: @breakpoint-small-desktop;
-          padding: 0 20px;
+          padding: 0 (20% / @breakpoint-phone) * 100;
       }
       &--center {
           margin: 0 auto;

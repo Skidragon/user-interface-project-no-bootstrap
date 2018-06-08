@@ -10,12 +10,17 @@
 
 // Colors
 @brand-color-white: #fff;
-
+@brand-color-black: rgb(17, 17, 17);
+//Margins & Padding
+@margin-xs: 24px;
+@margin-sm: 36px;
+@margin-md: 48px;
+@margin-lg: 60px;
 
 // Breakpoints
 @breakpoint-small-desktop: 960px;
 @breakpoint-tablet: 768px;
-@breakpoint-phone: 480px;
-@small-desktop: ~"only screen and (max-width: @{breakpoint-small-desktop})";
-@tablet: ~"only screen and (max-width: @{breakpoint-tablet})";
-@phone: ~"only screen and (max-width: @{breakpoint-phone})";
+@breakpoint-phone: 300px;
+@small-desktop: ~"only screen and (min-width: @{breakpoint-small-desktop})";
+@tablet: ~"only screen and (min-width: @{breakpoint-tablet})";
+@phone: ~"only screen and (min-width: @{breakpoint-phone})"; 
