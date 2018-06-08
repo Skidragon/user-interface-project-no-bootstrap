@@ -9,10 +9,21 @@
   height: 50px;
   border: 1px #111111 solid;
 }
-@media only screen and (min-width: 300px) {
-  .white-btn {
-    width: 100%;
-  }
+.grey-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  letter-spacing: .75rem;
+  text-transform: uppercase;
+  background: lightgrey;
+}
+.general-text {
+  line-height: 2.4rem;
+}
+.sub-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
@@ -193,6 +204,7 @@ html {
 }
 body {
   font-size: 1.6rem;
+  line-height: 2.4rem;
   font-family: sans-serif, Arial, Helvetica;
 }
 .jumbotron .jumbotron__all-text {
@@ -289,4 +301,36 @@ body {
   .cta__btn {
     width: 100%;
   }
+}
+.projects {
+  margin-top: 60px;
+}
+.projects .main-topic {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+.projects__img > * {
+  width: 100%;
+}
+.projects__box {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  letter-spacing: .75rem;
+  text-transform: uppercase;
+  background: lightgrey;
+  height: 125px;
+  width: 90%;
+  padding: 12px 0;
+}
+.projects__text {
+  line-height: 2.4rem;
+}
+.projects__text:first-child {
+  margin: 124px 0 28px 0;
 }
