@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for basic elements.
+// -----------------------------------------------------------------------------
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem;
+  }
+
+  .container {
+      &--md {
+          max-width: @breakpoint-small-desktop;
+          padding: 0 20px;
+      }
+      &--center {
+          margin: 0 auto;
+      }
+  }
