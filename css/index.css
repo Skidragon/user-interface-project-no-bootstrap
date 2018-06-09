@@ -258,7 +258,7 @@ body {
 .footer {
   color: #fff;
   background: darkgrey;
-  padding: 28px 0;
+  padding: 28px 6.66666667%;
 }
 .footer__all-text {
   margin-bottom: 12px;
@@ -438,8 +438,14 @@ body {
     padding: 12px 0;
   }
 }
+@media only screen and (min-width: 300px) {
+  .projects__all-text {
+    padding: 0 6.66666667%;
+  }
+}
 @media only screen and (min-width: 600px) {
   .projects__all-text {
+    padding: 0;
     width: 50%;
     margin: 0 auto;
   }
