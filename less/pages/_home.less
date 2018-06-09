@@ -1,6 +1,7 @@
 .cta {
     &__container {
         @media @phone {
+            padding: 0 (20% / @breakpoint-phone) * 100;
             margin-top: @margin-md;
             &>* {
                 margin-top: @margin-sm;
@@ -9,7 +10,6 @@
         @media @tablet {
             display: flex;
             flex-direction: row-reverse;
-           
             &:nth-child(2) {
                 flex-direction: row;
             }

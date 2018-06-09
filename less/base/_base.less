@@ -18,6 +18,7 @@ body {
 }
 
 .jumbotron {
+    padding: 0 (20% / @breakpoint-phone) * 100;
     .jumbotron__all-text {
         //Based off of .jumbotron-main positioning
         position: absolute;
@@ -62,10 +63,7 @@ body {
     &--lg {
         max-width: 968px;
     }
-    &--md {
-        max-width: 968px;
-        padding: 0 (20% / @breakpoint-phone) * 100;
-    }
+  
     &--center {
         margin: 0 auto;
     }

@@ -211,6 +211,9 @@ body {
   line-height: 2.4rem;
   font-family: sans-serif, Arial, Helvetica;
 }
+.jumbotron {
+  padding: 0 6.66666667%;
+}
 .jumbotron .jumbotron__all-text {
   position: absolute;
   bottom: 0;
@@ -248,10 +251,6 @@ body {
 }
 .container--lg {
   max-width: 968px;
-}
-.container--md {
-  max-width: 968px;
-  padding: 0 6.66666667%;
 }
 .container--center {
   margin: 0 auto;
@@ -307,6 +306,7 @@ body {
   height: 50px;
   background: #9DA7B1;
   opacity: .95;
+  padding: 0 6.66666667%;
 }
 .nav-main__logo {
   color: #fff;
@@ -320,6 +320,7 @@ body {
 }
 @media only screen and (min-width: 300px) {
   .cta__container {
+    padding: 0 6.66666667%;
     margin-top: 48px;
   }
   .cta__container > * {
