@@ -1,0 +1,41 @@
+.footer {
+    color: @brand-color-white;
+    background: darkgrey;
+    padding: @padding-sm 0;
+
+    &__all-text {
+        margin-bottom: @margin-xs;
+    }
+    &__cta-text {
+        .sub-heading--white();
+        margin-bottom: 4px;
+    }
+    &__email {
+        margin-bottom: 8px;
+        padding: @padding-xs;
+        width: 100%;
+        border-radius: 6px;
+    }
+    &__disclosure {
+        font-size: 1.5rem;
+    }
+    
+    &__city {
+        .sub-heading--white;
+        margin: @margin-sm 0 8px 0;
+    }
+
+    &__address {
+        line-height: 3rem;
+    }
+    &__phone {
+        margin-top: 8px;
+        &:last-child {
+        margin-bottom: @margin-lg;
+        }
+    }
+
+    &__copyright {
+        font-size: 1rem;
+    }
+} //footer

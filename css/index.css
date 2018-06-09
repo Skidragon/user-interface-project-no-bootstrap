@@ -25,6 +25,10 @@
   font-size: 2.4rem;
   font-weight: 600;
 }
+.sub-heading--white {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -238,6 +242,45 @@ body {
 }
 .container--center {
   margin: 0 auto;
+}
+.footer {
+  color: #fff;
+  background: darkgrey;
+  padding: 28px 0;
+}
+.footer__all-text {
+  margin-bottom: 12px;
+}
+.footer__cta-text {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.footer__email {
+  margin-bottom: 8px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+}
+.footer__disclosure {
+  font-size: 1.5rem;
+}
+.footer__city {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 28px 0 8px 0;
+}
+.footer__address {
+  line-height: 3rem;
+}
+.footer__phone {
+  margin-top: 8px;
+}
+.footer__phone:last-child {
+  margin-bottom: 60px;
+}
+.footer__copyright {
+  font-size: 1rem;
 }
 .nav-main {
   position: fixed;
