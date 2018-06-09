@@ -64,23 +64,47 @@
 .projects {
     margin-top: @margin-lg;
     .main-topic {
-        .sub-heading;
-        margin-bottom: @margin-sm;
+        @media @phone {
+            padding: 0 (20% / @breakpoint-phone) * 100;
+            .sub-heading;
+            margin-bottom: @margin-sm;
+        }
+        @media @tablet {
+            padding: 0;
+        }
     }
     &__img {
         &>* {
             width: 100%;
         }
     }
+    //Grey box starts
+    @media @tablet {
+        .project:nth-child(even) > &__box {
+            width: 29%;
+            left: auto;
+            right: 0;
+            transform: translate(-40.5%, -30%);
+        }
+        .project:nth-child(odd) > &__box {
+            width: 29%;
+            left: 0;
+            transform: translate(40.5%, -30%);
+        }
+    } //tablet
     &__box {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -30%);
-        .grey-box();
-        height: 125px;
-        width: 90%;
-        padding: 12px 0;
-    }
+        @media @phone {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            .grey-box();
+            height: 125px;
+            width: 90%;
+            padding: 12px 0;
+        } //phone
+    } // box
+
+    //Grey box ends
     &__text {
         .general-text();
         &:first-child {
