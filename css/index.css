@@ -438,12 +438,20 @@ body {
     padding: 12px 0;
   }
 }
-.projects__text {
-  line-height: 2.4rem;
+@media only screen and (min-width: 600px) {
+  .projects__all-text {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
-.projects__text:first-child {
-  margin: 124px 0 28px 0;
-}
-.projects__text:last-child {
-  margin-bottom: 60px;
+@media only screen and (min-width: 300px) {
+  .projects__text {
+    line-height: 2.4rem;
+  }
+  .projects__text:first-child {
+    margin: 124px 0 28px 0;
+  }
+  .projects__text:last-child {
+    margin-bottom: 60px;
+  }
 }
